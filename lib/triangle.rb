@@ -22,10 +22,9 @@ class Triangle
       else
         :scalene
       end
-      binding.pry
     else
     end
-    
+          binding.pry
   end
   
   class TriangleError < StandardError
