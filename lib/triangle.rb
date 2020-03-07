@@ -13,7 +13,7 @@ class Triangle
   end
   
   def kind
-    zero_sides = @sides.include?(0)
+    zero_sides = @sides.none?(0)
     binding.pry
     if (@side3 > @side2 + @side1 || @side3 > @side2 + @side1 || @side3 > @side2 + @side1 || @side1 = 0 || @side2 = 0 || @side3 = 0)
     else
