@@ -4,11 +4,12 @@ class Triangle
   # write code here
   
   attr_accessor :side1, :side2, :side3
+  
   def initialize(side1, side2, side3)
     @sides = [side1, side2, side3]
-    @sum1_2
-    @sum1_3
-    @sum2_3
+    @sum1_2 = true if side1 + side2 > side3
+    @sum1_3 = true if side1 + side3 > side2
+    @sum2_3 = true if side2 + side3 > side1
   end
   
   def kind
