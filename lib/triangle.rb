@@ -14,7 +14,6 @@ class Triangle
   
   def kind
     zero_sides = @sides.none?(0)
-    binding.pry
     if (zero_sides && @sum1_3 && @sum1_2 && @sum2_3)
       if (@sides.uniq.size == 1)
         :equilateral
