@@ -16,7 +16,7 @@ class Triangle
     zero_sides = @sides.none?(0)
     binding.pry
     if (zero_sides && @sum1_3 && @sum1_2 && @sum2_3)
-      
+      if 
     else
     end
     
