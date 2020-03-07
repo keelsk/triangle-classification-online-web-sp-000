@@ -16,7 +16,14 @@ class Triangle
     zero_sides = @sides.none?(0)
     binding.pry
     if (zero_sides && @sum1_3 && @sum1_2 && @sum2_3)
-      if 
+      if (@sides.uniq.size == 1)
+        :equilateral
+      elsif (@sides.uniq.size == 2)
+        :isosceles
+      else
+        :scalene
+      end
+      binding.pry
     else
     end
     
