@@ -11,9 +11,15 @@ class Triangle
     binding.pry
     if (@side3 > @side2 + @side1 || @side3 > @side2 + @side1 || @side3 > @side2 + @side1 || @side1 = 0 || @side2 = 0 || @side3 = 0)
     else
+    end
     
   end
   
+  class TriangleError < StandardError
+    def message
+      "This is not a valid triangle. Please try again"
+    end
+  end
 
 end
 
