@@ -17,8 +17,7 @@ class Triangle
     positive_sides = @sides.all? do |side|
       side > 0
     end
-binding.pry
-    if (zero_sides && @sum1_3 && @sum1_2 && @sum2_3)
+    if (zero_sides && positive_sides && @sum1_3 && @sum1_2 && @sum2_3)
       if (@sides.uniq.size == 1)
         :equilateral
       elsif (@sides.uniq.size == 2)
