@@ -6,6 +6,9 @@ class Triangle
   attr_accessor :side1, :side2, :side3
   def initialize(side1, side2, side3)
     @sides = [side1, side2, side3]
+    @sum1_2
+    @sum1_3
+    @sum2_3
   end
   
   def kind
