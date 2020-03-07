@@ -26,6 +26,11 @@ class Triangle
         :scalene
       end
     else
+      begin
+        raise TriangleError
+      rescue TriangleError =>
+        puts error.message
+      end
     end
   end
   
