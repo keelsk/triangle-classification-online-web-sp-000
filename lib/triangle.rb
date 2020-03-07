@@ -14,12 +14,14 @@ class Triangle
     
   end
   
+
+end
+
   class TriangleError < StandardError
     def message
       "This is not a valid triangle. Please try again"
     end
   end
-end
 
 
 
