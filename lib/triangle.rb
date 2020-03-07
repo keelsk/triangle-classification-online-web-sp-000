@@ -15,7 +15,8 @@ class Triangle
   def kind
     zero_sides = @sides.none?(0)
     binding.pry
-    if (@side3 > @side2 + @side1 || @side3 > @side2 + @side1 || @side3 > @side2 + @side1 || @side1 = 0 || @side2 = 0 || @side3 = 0)
+    if (zero_sides && @sum1_3 && @sum1_2 && @sum2_3)
+      
     else
     end
     
